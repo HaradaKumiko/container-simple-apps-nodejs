@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "78e41a1d-20c6-4c2a-9d87-e5d1c7b07699",
+		"name": "container-simple-apps-nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15845543",
+		"_collection_link": "https://grey-moon-334739.postman.co/workspace/OCTOPUS-LABS~43baad5d-bba7-4fe1-86f7-e981d16e98a9/collection/15845543-78e41a1d-20c6-4c2a-9d87-e5d1c7b07699?action=share&creator=15845543&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Anime",
+			"item": [
+				{
+					"name": "All Anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pelanpelanpaksupir.com/api/animes?q=a&page=1",
+							"protocol": "http",
+							"host": [
+								"pelanpelanpaksupir",
+								"com"
+							],
+							"path": [
+								"api",
+								"animes"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "a"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Anime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"anime\": \"Vinland Saga\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pelanpelanpaksupir.com/api/anime",
+							"protocol": "http",
+							"host": [
+								"pelanpelanpaksupir",
+								"com"
+							],
+							"path": [
+								"api",
+								"anime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Anime By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pelanpelanpaksupir.com/api/anime/64b9488b7d8cd7a374a15d2d",
+							"protocol": "http",
+							"host": [
+								"pelanpelanpaksupir",
+								"com"
+							],
+							"path": [
+								"api",
+								"anime",
+								"64b9488b7d8cd7a374a15d2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Anime",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"anime\": \"The Rising Of The Shield Hero\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pelanpelanpaksupir.com/api/anime/64b9488b7d8cd7a374a15d2d",
+							"protocol": "http",
+							"host": [
+								"pelanpelanpaksupir",
+								"com"
+							],
+							"path": [
+								"api",
+								"anime",
+								"64b9488b7d8cd7a374a15d2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Anime",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://pelanpelanpaksupir.com/api/anime/64b9488b7d8cd7a374a15d2d",
+							"protocol": "http",
+							"host": [
+								"pelanpelanpaksupir",
+								"com"
+							],
+							"path": [
+								"api",
+								"anime",
+								"64b9488b7d8cd7a374a15d2d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
