@@ -29,7 +29,7 @@ services:
     depends_on:
       - nginx-webserver
 
-  repolibum-apps:
+  nodetestdocker-apps:
     image: haradakumiko/nodetestdocker:latest
     container_name: nodetestdocker
     ports:
